@@ -4,7 +4,7 @@ pipeline {
 		DOCKERHUB_CREDENTIALS=credentials('anek2000')
 	}
 
-    stages('h') {
+    stages {
 	            stage('Docker build image'){
             steps{
                 sh '''	docker build -t anek2000/jenkins-test:v4 .
